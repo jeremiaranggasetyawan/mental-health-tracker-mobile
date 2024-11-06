@@ -1,5 +1,6 @@
-import 'package:mental_health_tracker/menu.dart';
+import 'package:mental_health_tracker/screens/menu.dart';
 import 'package:flutter/material.dart';
+// TODO: Impor halaman MoodEntryFormPage jika sudah dibuat
 
 void main() {
   runApp(const MyApp());
