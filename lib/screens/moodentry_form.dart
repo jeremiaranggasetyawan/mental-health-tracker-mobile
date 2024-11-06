@@ -25,7 +25,6 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
         backgroundColor: Theme.of(context).colorScheme.primary,
         foregroundColor: Colors.white,
       ),
-      drawer: const LeftDrawer(),
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(
@@ -125,7 +124,8 @@ class _MoodEntryFormPageState extends State<MoodEntryFormPage> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text('Mood: $_mood'),
-                                    // TODO: Munculkan value-value lainnya
+                                    Text('Feelings: $_feelings'),
+                                    Text('Mood Intensity: $_moodIntensity'),
                                   ],
                                 ),
                               ),

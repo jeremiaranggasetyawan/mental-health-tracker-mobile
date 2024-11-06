@@ -31,13 +31,13 @@ class ItemCard extends StatelessWidget {
             ..hideCurrentSnackBar()
             ..showSnackBar(SnackBar(
                 content: Text("Kamu telah menekan tombol ${item.name}!")));
+
           // Navigate ke route yang sesuai (tergantung jenis tombol)
           if (item.name == "Tambah Mood") {
-            // TODO: Gunakan Navigator.push untuk melakukan navigasi ke MaterialPageRoute yang mencakup TrackerFormPage.
-            Navigator.pushReplacement(
+            Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => MoodEntryFormPage(),
+                  builder: (context) => const MoodEntryFormPage(),
                 ));
           }
         },
